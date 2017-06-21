@@ -2,7 +2,7 @@ package inheritance;
 
 public class Student extends Human {
 
-    private static int MAX_COURSE = 5;
+    private static int MAX_YEAR = 5;
 
     private String institution;
     private String faculty;
@@ -38,8 +38,8 @@ public class Student extends Human {
         return year;
     }
 
-    public void toNextCourse() {
-        if (year <= MAX_COURSE) {
+    public void toNextYear() {
+        if (year <= MAX_YEAR) {
             this.year += 1;
         }
     }
